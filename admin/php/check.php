@@ -5,10 +5,10 @@ if(isset($_SESSION['username'])){
 }
 include("../../include/db.php");
 if(isset($_POST['login'])){
-    $email = mysqli_real_escape_string($db,$_POST['email']);
+    $email = mysqli_real_escape_string($db,$_POST['username']);
     $password = mysqli_real_escape_string($db,$_POST['password']);
     
-    $query="SELECT * FROM admin_users WHERE user_id='$email' AND user_pass='$password'";
+    $query="SELECT * FROM admin_users WHERE username='$email' AND user_pass='$password'";
     $run = mysqli_query($db,$query);
     $result = mysqli_fetch_array($run);
     if($result){

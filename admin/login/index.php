@@ -46,7 +46,7 @@ if(isset($_SESSION['username'])){
   if($_GET['msg']=='logout'){
       ?>
       <div class="alert alert-success text-center" role="alert">
-  Logout Successfull !
+  Logout Successfully!
 </div>
       <?php
   }  
@@ -60,8 +60,8 @@ if(isset($_SESSION['username'])){
 ?> 
 <!--  <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputEmail" class="sr-only">Username</label>
+  <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
   <div class="checkbox mb-3">

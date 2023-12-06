@@ -1,3 +1,20 @@
+
+<?php
+include("../include/db.php");
+
+    $id = "appledinawanao@gmail.com";
+    $query="SELECT * FROM basic_setup WHERE user_id = '$id'";
+    $run = mysqli_query($db,$query);
+
+    if(mysqli_num_rows($run) !=0){
+    $result = mysqli_fetch_array($run); 
+    
+    $name = $result['title'];
+  }else{
+        $email = "";
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -81,7 +98,7 @@
           <div class="col-md-6 ">
             <div class="detail_box">
               <h1>
-               Apple Mae J. Dinawanao <br>
+               Apple Mae J. Dinawanao <?php echo $name ?> <br>
               <a>
                 <div class="btn-container">
                   <button
@@ -273,7 +290,7 @@
 
 
   <!-- contact section -->
-  <section class="contact_section layout_padding">
+<section class="contact_section layout_padding">
     <div class="container ">
       <div class="heading_container">
         <h2>
@@ -282,21 +299,23 @@
         
       </div>
     </div>
+    
+    <form action="../include/message.php" method="post" role="form" class="php-email-form">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <form action="">
             <div>
-              <input type="text" placeholder="Name" />
+              <input name = "name" type="text" placeholder="Name" />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input name = "email" type="email" placeholder="Email" />
             </div>
             <div>
-              <input type="text" placeholder="Phone Number" />
+              <input name = "subject" type="text" placeholder="Subject" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input name = "message" type="text" class="message-box" placeholder="Message" />
             </div>
             <div class="d-flex ">
               <button>
@@ -305,7 +324,7 @@
             </div>
           </form>
         </div>
-       
+   </form>
           </div>
         </div>
       </div>
