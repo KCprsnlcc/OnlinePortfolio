@@ -1,0 +1,229 @@
+
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.background-image {
+    background-image: url('images/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1000px; /* Adjust the height as needed */
+    opacity: 0.7; /* Adjust the opacity as needed */
+}
+
+.header-content {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.header-content h1 {
+    font-size: 40px;
+}
+
+.profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+nav {
+    position: absolute;
+    top: 20px; /* Adjust the top position to move the navigation down from the top */
+    right: 20px; /* Adjust the right position to move the navigation from the right */
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    padding-right: 20%;
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    font-size: larger;
+    text-decoration: none;
+    color: #fff;
+    
+}
+nav a {
+    transition: 0.3s;
+  }
+  
+  /* Apply the smooth scroll effect when the link is active */
+  nav a:active {
+    transition: 0.3s;
+  }
+  
+  /* Active link styling */
+  nav a:active {
+    color: #ff6600; /* Change the color as desired */
+  }
+
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+section#about {
+    text-align: center; /* Center the text */
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
+section#about img{
+    position: absolute;
+    left: 35px;
+    width: 200px;
+    height: 190px;
+}
+
+section#about h2 {
+    font-size: 50px; /* Increase the font size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    text-align: left;
+}
+
+section#about p {
+    font-size: 25px; /* Increase the font size as needed */
+    text-align: left;
+}
+section#about ul {
+    text-align: left;
+}
+section#about div {
+    text-align: left;
+    padding-top: 60px;
+}
+section#projects {
+    color: #f5f5f5;
+    background-color: #333
+}
+section#projects h2{
+    font-size: 50px;
+    text-align: center;
+
+}
+section#projects div {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+}
+.project {
+    display: flex;
+    align-items: center;
+}
+
+.project img {
+    max-width: 50%; /* Adjust this value based on your layout preferences */
+}
+
+.project-info {
+    padding: 0 20px; /* Adjust the padding to control the spacing between the image and text */
+    flex: 1;
+}
+section#contact {
+    color:#f5f5f5;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+}
+section#contact h1 {
+    font-size: 60px;
+}
+.about-section:hover {
+    background-color: #ff5733; /* Change the background color on hover */
+    animation: colorChange 2s infinite; /* Apply animation on hover */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #000000;
+    }
+    50% {
+      background-color: #203223; /* Change to a different color halfway through the animation */
+    }
+    100% {
+      background-color: #000000;
+    }
+  }
+  .font-animation {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    transition: font-size 0.3s, color 0.3s;
+  }
+  .font-animation h1 {
+    font-size: 40px;
+    color: rgb(245, 244, 244);
+    transition: font-size 0.3s, color 0.3s;
+  }
+  
+  .font-animation.hovered h1 {
+    font-size: 45px;
+    color: rgb(2, 2, 2);
+    text-align: center;
+  }
+  .font-animation.hovered {
+    font-size: 20px;
+    color: rgb(50, 142, 83);
+  }

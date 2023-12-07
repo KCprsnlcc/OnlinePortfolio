@@ -36,7 +36,7 @@
   
    <div class="form-group col-md-6">
       <label for="name">Name</label>
-      <input type="name" name="name" value="<?=$data['name']?>" class="form-control" id="name" placeholder="Khadaffe Sulaiman">
+      <input type="name" name="name" value="<?=$data['name']?>" class="form-control" id="name" placeholder="8+ Characters">
     </div>
     
    
@@ -47,17 +47,17 @@
     </div>
     <div class="form-group col-md-6">
       <label for="twitter">Twitter</label>
-      <input type="text" class="form-control" value="<?=$data['twitter']?>" name="twitter" id="twitter" placeholder="https://twitter.com/Khadaffe_Sulaiman">
+      <input type="text" class="form-control" value="<?=$data['twitter']?>" name="twitter" id="twitter" placeholder="https://twitter.com/
     </div>
     
     <div class="form-group col-md-6">
       <label for="facebook">Facebook</label>
-      <input type="text" class="form-control" value="<?=$data['facebook']?>" name="facebook" id="facebook" placeholder="https://www.facebook.com/Daff.Sulaiman">
+      <input type="text" class="form-control" value="<?=$data['facebook']?>" name="facebook" id="facebook" placeholder="https://www.facebook.com/">
     </div>
     
     <div class="form-group col-md-6">
       <label for="instagram">Instagram</label>
-      <input type="text" class="form-control" value="<?=$data['instagram']?>" name="instagram" id="instagram" placeholder="https://instagram.com/kashlrl">
+      <input type="text" class="form-control" value="<?=$data['instagram']?>" name="instagram" id="instagram" placeholder="https://instagram.com/">
     </div>
     
     <div class="form-group col-md-6">
@@ -67,25 +67,25 @@
     
     <div class="form-group col-md-6">
       <label for="linkedin">Linkedin</label>
-      <input type="text" class="form-control" value="<?=$data['linkedin']?>" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/in/khadaffe-sulaiman-232199194">
+      <input type="text" class="form-control" value="<?=$data['linkedin']?>" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/in">
     </div>
     <div class="form-group col-md-6">
       <label for="github">Github</label>
-      <input type="text" class="form-control"  value="<?=$data['github']?>" name="github" id="github" placeholder="https://github.com/KCprsnlcc">
+      <input type="text" class="form-control"  value="<?=$data['github']?>" name="github" id="github" placeholder="https://github.com/">
     </div>
   </div>
   <div class="form-group">
     <label for="address">Address</label>
-    <input type="text" name="address" value="<?=$data['location']?>" class="form-control" id="address" placeholder="Recodo Purok 1-B, Zamboanga City, Zamboanga Del Sur, 7000">
+    <input type="text" name="address" value="<?=$data['location']?>" class="form-control" id="address" placeholder="Address">
   </div>
   <div class="form-row">
   <div class="form-group col-md-9">
     <label for="profession">Proffesion Titles (Separate with ',' comma)</label>
-    <input type="text" class="form-control" name="profession" value="<?=$data['professions']?>" id="profession" placeholder="Web Developer, PHP Developer, Graphic Designer">
+    <input type="text" class="form-control" name="profession" value="<?=$data['professions']?>" id="profession" placeholder="Profession Titles">
   </div>
   <div class="form-group col-md-3">
     <label for="mobile">Mobile No</label>
-    <input type="text" class="form-control" value="<?=$data['mobile']?>" name="mobile" id="mobile" placeholder="+639949953785">
+    <input type="text" class="form-control" value="<?=$data['mobile']?>" name="mobile" id="mobile" placeholder="Phone Number">
   </div>
              </div>
   <input type="submit" name="save" class="btn btn-primary" value="Save Changes">

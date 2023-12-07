@@ -1,19 +1,12 @@
-
-<?php
-include("../include/db.php");
-
-    $id = "appledinawanao@gmail.com";
-    $query="SELECT * FROM basic_setup WHERE user_id = '$id'";
-    $run = mysqli_query($db,$query);
-
-    if(mysqli_num_rows($run) !=0){
-    $result = mysqli_fetch_array($run); 
-    
-    $name = $result['title'];
-  }else{
-        $email = "";
-  }
+<?php include('../include/db.php'); 
+$query = "SELECT * FROM basic_setup,personal_setup,aboutus_setup";
+$runquery = mysqli_query($db,$query);
+if(!$db){
+    header("location:index-2.html");
+}
+$data = mysqli_fetch_array($runquery);
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -98,7 +91,7 @@ include("../include/db.php");
           <div class="col-md-6 ">
             <div class="detail_box">
               <h1>
-               Apple Mae J. Dinawanao <?php echo $name ?> <br>
+               Apple Mae J. Dinawanao <br>
               <a>
                 <div class="btn-container">
                   <button
@@ -290,7 +283,8 @@ include("../include/db.php");
 
 
   <!-- contact section -->
-<section class="contact_section layout_padding">
+
+  <section class="contact_section layout_padding">
     <div class="container ">
       <div class="heading_container">
         <h2>
@@ -299,12 +293,11 @@ include("../include/db.php");
         
       </div>
     </div>
-    
-    <form action="../include/message.php" method="post" role="form" class="php-email-form">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form action="../include/message.php" method = "post">
+            
             <div>
               <input name = "name" type="text" placeholder="Name" />
             </div>
@@ -321,10 +314,11 @@ include("../include/db.php");
               <button>
                 SEND
               </button>
+
             </div>
           </form>
         </div>
-   </form>
+       
           </div>
         </div>
       </div>

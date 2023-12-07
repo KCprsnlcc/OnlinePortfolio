@@ -1,7 +1,27 @@
-<?php 
-session_start();
-if(isset($_SESSION['username'])){
-    header('location: ');
+<?php
+session_start(); // Make sure to start the session
+
+include('../../include/db.php');
+
+if (isset($_SESSION['user_id'])){
+    header("Location: index.php"); // Replace 'some_page.php' with the desired location
+    exit(); // Make sure to stop script execution after redirection
+}
+
+if (isset($_POST['login'])){
+    $email = $_POST['username']; // Correct the variable name
+    $password = $_POST['password']; // Correct the variable name
+    $query = "SELECT * FROM admin_users WHERE username = '$email' AND password = '$password'";
+    $run = mysqli_query($db, $query);
+
+    if(mysqli_num_rows($run) != 0){
+        $result = mysqli_fetch_array($run);
+        $_SESSION['user_id'] = $result['id'];
+        header("Location: index.php"); // Replace 'some_page.php' with the desired location
+        exit(); // Make sure to stop script execution after redirection
+    } else {
+        echo "Connection error";
+    }
 }
 ?>
 <!doctype html>
