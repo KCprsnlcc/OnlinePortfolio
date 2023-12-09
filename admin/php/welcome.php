@@ -29,7 +29,7 @@
               $count++;
       }
       if($count==0){ ?>
-          <td colspan="5" align="center"> Currenty There Is No Messages or Queries !</td>
+          <td colspan="5" align="center"> Currenty,there is no Messages or Queries!</td>
       <?php }
         ?>
               

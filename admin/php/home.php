@@ -12,7 +12,7 @@
   if($_GET['msg']=='error'){
       ?>
       <div class="alert alert-danger text-center" role="alert">
-  something wrong with your image please check type or size !
+      Something is wrong with your Image file, please check type or size!
 </div>
       <?php
   } } 

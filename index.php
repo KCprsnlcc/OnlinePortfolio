@@ -106,7 +106,6 @@ $data = mysqli_fetch_array($runquery);
                     <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
                     <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
                     <li><a href="khadaffesulaiman.pdf"><i class="bx bx-file"></i> Download CV</a></li>
-                    <li><a href="admin/login/index.php"><i class="bx bx-log-out"></i> Logout</a></li>
 
                 </ul>
             </nav><!-- .nav-menu -->

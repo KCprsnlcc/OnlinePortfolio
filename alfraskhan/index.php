@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
     <link rel="stylesheet" href="design.css">
+
 </head>
 <body>
     <header>
@@ -14,12 +15,13 @@
             <div class="font-animation">
                 <h1 class="font-animation">Al-Fraskhan A. Jose</h1>
             </div>
+            <a href="fras-cv.pdf" class="button" download><span>Download CV</span></a>
     </header>
     <nav>
         <ul class="font-animation">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li> 
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="about" class="about-section">
@@ -58,9 +60,8 @@
             Still confused. then,
         </p>
         <h1 class="font-animation">Let's Talk</h1>
-        <p>Or send an Email to <a href="mailto:alfraskhanjose91@gmail.com">alfraskhanjose91@gmail.com</a></p>
+        <p>Or send an Email to <a href="mailto:alfraskhanjose91@gmail.com" class="about-section">alfraskhanjose91@gmail.com</a></p>
         
-
     </section>
 </body>
 </html>
